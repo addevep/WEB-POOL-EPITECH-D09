@@ -1,0 +1,193 @@
+/* COLORS :
+-Black : #293540
+-Blue : #79BEE0
+-Lightblue : #E1EBF5
+-White : #FFFFFF
+-Orange : #FF7A4A
+*/
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+}
+
+.box {
+    border: solid 2px #293540;
+    margin: 10px;
+    padding: 0px 10px;
+    background-color: #FFFFFF;
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    width: 80%;
+}
+
+aside {
+    width: 20%;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #FF7A4A !important;
+}
+
+h1 {
+    grid-column: 5/1;
+    margin: auto 20px;
+    color: #FFFFFF;
+}
+
+h2 {
+    margin-left: 5%;
+}
+
+caption {
+    font-weight: bold;
+    font-size: larger;
+    padding: 5px 10px;
+    float: left;
+}
+
+table {
+    text-align: center;
+}
+
+th {
+    padding: 5px 10px;
+    background-color: #79BEE0;
+}
+
+td {
+    background-color: #E1EBF5;
+    padding: 5px 10px;
+}
+
+pre {
+    background: beige;
+}
+
+figcaption {
+    margin: 10% 2%;
+    float: right;
+    font-weight: 500;
+}
+
+.moving_square {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: mv_square 5s ease 5;
+}
+
+@keyframes mv_square {
+    25% {
+        transform: translateY(100%);
+        background-color: green;
+    }
+
+    50% {
+        transform: translate(100%, 100%);
+        background-color: blue;
+    }
+
+    75% {
+        transform: translate(100%, 0);
+        background-color: yellow;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        background-color: red;
+    }
+}
+
+code {
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: auto;
+    padding: 2px 5px;
+}
+
+nav a:hover {
+    color: #FF7A4A;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #293540;
+    font-weight: bold;
+}
+
+article:nth-child(1n+2) {
+    margin: 10px;
+    padding: 0px 10px;
+}
+
+article:nth-child(1n+2) div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+
+}
+
+article:nth-child(1n+2) label {
+    width: 30%;
+}
+
+article:nth-child(1n+2) input,
+textarea,
+select {
+    width: 70%;
+    border: solid 2px #293540;
+}
+
+input[type="radio"] {
+    width: 30px !important;
+}
+
+input[type="color"], input[type="date"] {
+    width: 100px !important;
+    margin-right: auto;
+}
+
+button {
+    float: right;
+    border: solid 2px #293540;
+    padding: 5px 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+input:focus {
+    outline: none;
+    border: solid 2px #FF7A4A;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer li {
+    margin: 0 0 10px;
+}
+
+footer a{
+    color: #FF7A4A !important;
+}
